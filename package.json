@@ -1,10 +1,10 @@
 {
-  "name": "generator-tt-newsapps",
+  "name": "nbnteractive-generator",
   "version": "0.0.2",
-  "description": "Scaffold out a Texas Tribune web app or graphic.",
+  "description": "Scaffold out a North by Northwestern web app or graphic. Forked from the Texas Tribune.",
   "license": "MIT",
-  "repository": "texastribune/generator-tt-newsapps",
-  "author": "The Texas Tribune",
+  "repository": "northbynorthwestern/nbnteractive-generator",
+  "author": "North by Northwestern",
   "main": "app/index.js",
   "engines": {
     "node": ">=0.10.0",
@@ -24,7 +24,7 @@
     "journalism",
     "newsapps"
   ],
-  "author": "Texas Tribune News Apps",
+  "author": "NBNteractive",
   "license": "MIT",
   "dependencies": {
     "chalk": "^0.5.1",
