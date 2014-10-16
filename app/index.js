@@ -18,7 +18,7 @@ module.exports = yeoman.generators.Base.extend({
   askFor: function() {
     var done = this.async();
 
-    this.log(yosay('Welcome to the Texas Tribune News Apps generator!'));
+    this.log(yosay('Welcome to the NBNteractive generator!'));
     this.log(chalk.bold.yellow('Let us begin. I come with SCSS and autoprefixer out of the box. Enjoy!'));
 
     var prompts = [{
@@ -29,24 +29,10 @@ module.exports = yeoman.generators.Base.extend({
       filter: function(response) {
         return this._.slugify(response);
       }.bind(this)
-    },{
-      type: 'confirm',
-      name: 'grandHeader',
-      message: 'Do you need a grand header? (Centered headline, large background image)',
-    },{
-      type: 'list',
-      name: 'footerType',
-      message: 'Which footer would you like to use?',
-      choices: [
-        {name: 'Basic', value: 'basic'}
-        // {name: 'News Apps', value: 'newsapps'} // TODO
-      ]
     }];
 
     this.prompt(prompts, function(answers) {
       this.appname = answers.projectName;
-      this.grandHeader = answers.grandHeader;
-      this.footerType = answers.footerType;
 
       done();
     }.bind(this));

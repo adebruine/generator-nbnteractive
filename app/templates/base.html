@@ -24,42 +24,36 @@
     </div>
   </div>
 </header>
-<% if (grandHeader) { %>
+
 <div class="banner">
-  <div class="grand-header-image"></div>
-  <header class="grand-header content-block">
+  <header class="content-block">
     <h1><a href="/">{{ META.project_title }}</a></h1>
   </header>
 </div>
-<% } %>
+
 {% block content %}{% endblock %}
 
-<% if (footerType === 'basic') { %>
 <footer class="tribune-footer">
-<div class="container">
-  <nav class="first-nav">
-    <ul>
-      <li>&copy; 2014 <a href="http://www.texastribune.org/">The Texas Tribune</a></li>
-    </ul>
-  </nav>
-  <nav class="last-nav">
-    <ul>
-      <li><a href="http://www.texastribune.org/about/">About Us</a></li>
-      <li><a href="http://www.texastribune.org/contact/">Contact Us</a></li>
-      <li><a href="http://www.texastribune.org/support-us/donors-and-members/">Who Funds Us?</a></li>
-      <li><a href="http://www.texastribune.org/terms-of-service/">Terms of Service</a></li>
-      <li><a href="http://www.texastribune.org/ethics/">Code of Ethics</a></li>
-      <li><a href="http://www.texastribune.org/privacy/">Privacy Policy</a></li>
-      <li class="donor-item"><a href="https://www.texastribune.org/join/">Donate</a></li>
-    </ul>
-  </nav>
-</div>
+  <div class="container">
+    <nav class="first-nav">
+      <ul>
+        <li>&copy; 2014 <a href="http://www.texastribune.org/">The Texas Tribune</a></li>
+      </ul>
+    </nav>
+    <nav class="last-nav">
+      <ul>
+        <li><a href="http://www.texastribune.org/about/">About Us</a></li>
+        <li><a href="http://www.texastribune.org/contact/">Contact Us</a></li>
+        <li><a href="http://www.texastribune.org/support-us/donors-and-members/">Who Funds Us?</a></li>
+        <li><a href="http://www.texastribune.org/terms-of-service/">Terms of Service</a></li>
+        <li><a href="http://www.texastribune.org/ethics/">Code of Ethics</a></li>
+        <li><a href="http://www.texastribune.org/privacy/">Privacy Policy</a></li>
+        <li class="donor-item"><a href="https://www.texastribune.org/join/">Donate</a></li>
+      </ul>
+    </nav>
+  </div>
 </footer>
-<% } else if (footerType === 'newsapps') { %>
-<footer class="tribune-footer">
-  TODO
-</footer>
-<% } %>
+
 
 <!-- build:js scripts/vendor.js -->
 <!-- bower:js -->

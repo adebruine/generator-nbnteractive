@@ -1,10 +1,10 @@
 {
-  "name": "nbnteractive-generator",
+  "name": "generator-nbnteractive",
   "version": "0.0.2",
   "description": "Scaffold out a North by Northwestern web app or graphic. Forked from the Texas Tribune.",
   "license": "MIT",
   "repository": "northbynorthwestern/nbnteractive-generator",
-  "author": "North by Northwestern",
+  "author": "NBNteractive",
   "main": "app/index.js",
   "engines": {
     "node": ">=0.10.0",
@@ -24,11 +24,9 @@
     "journalism",
     "newsapps"
   ],
-  "author": "NBNteractive",
-  "license": "MIT",
   "dependencies": {
     "chalk": "^0.5.1",
-    "yeoman-generator": "^0.17.2",
+    "yeoman-generator": "^0.17.7",
     "yosay": "^0.3.0"
   },
   "devDependencies": {
