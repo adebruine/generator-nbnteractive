@@ -3,9 +3,13 @@
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>{{ META.project_title }} | The Texas Tribune</title>
+  <title>{{ META.project_title }} | North by Northwestern</title>
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <script type="text/javascript" src="//use.typekit.net/adk4phw.js"></script>
+  <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+
   <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
   <!-- build:css styles/vendor.css -->
   <!-- bower:css -->
@@ -18,39 +22,29 @@
 <body>
 
 <header class="masthead">
-  <div class="container">
-    <div class="branding">
-      <a href="//www.texastribune.org/"><img class="trib-logo" alt="The Texas Tribune" src="/images/tt-logo-white.png"></a>
-    </div>
+  <div class="logo">
+    <a href="//www.northbynorthwestern.com/"><img class="nbn-logo" alt="North by Northwestern" src="http:///images/tt-logo-white.png"></a>
   </div>
 </header>
 
 <div class="banner">
-  <header class="content-block">
-    <h1><a href="/">{{ META.project_title }}</a></h1>
-  </header>
+  <div class="container">
+    <header class="content-block">
+      <h1><a href="/">{{ META.project_title }}asdgasdg</a></h1>
+    </header>
+  </div>
 </div>
 
+<main class="container">
 {% block content %}{% endblock %}
+</main>
 
-<footer class="tribune-footer">
+<footer class="nbn-footer">
   <div class="container">
-    <nav class="first-nav">
-      <ul>
-        <li>&copy; 2014 <a href="http://www.texastribune.org/">The Texas Tribune</a></li>
-      </ul>
-    </nav>
-    <nav class="last-nav">
-      <ul>
-        <li><a href="http://www.texastribune.org/about/">About Us</a></li>
-        <li><a href="http://www.texastribune.org/contact/">Contact Us</a></li>
-        <li><a href="http://www.texastribune.org/support-us/donors-and-members/">Who Funds Us?</a></li>
-        <li><a href="http://www.texastribune.org/terms-of-service/">Terms of Service</a></li>
-        <li><a href="http://www.texastribune.org/ethics/">Code of Ethics</a></li>
-        <li><a href="http://www.texastribune.org/privacy/">Privacy Policy</a></li>
-        <li class="donor-item"><a href="https://www.texastribune.org/join/">Donate</a></li>
-      </ul>
-    </nav>
+    <div class="credits content-block">
+      <p><strong>Design and Development</strong>: {{ META.design_and_dev }}</p>
+      <p>&copy; 2014 <a href="http://www.northbynorthwestern.org/">North by Northwestern</a></p>
+    </div>
   </div>
 </footer>
 
